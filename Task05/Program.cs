@@ -6,9 +6,14 @@
 
 Console.WriteLine("Enter natural number");
 int number = Convert.ToInt32(Console.ReadLine());
-int i = -number;
-while (i <= number)
+if (number < 1)
+    Console.WriteLine("Invalid Input");
+else
 {
-    Console.Write($"{i} ");
-    ++i;
+    int i = -number;
+    while (i <= number)
+    {
+        Console.Write($"{i} ");
+        ++i;
+    }
 }
