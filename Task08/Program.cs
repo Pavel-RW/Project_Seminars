@@ -15,11 +15,7 @@ else
         if (i % 2 == 0)
         {
             Console.Write($"{i} ");
-            ++i;
         }
-        else
-        {
-            ++i;
-        }
+        ++i;
     }
-    }
+}
