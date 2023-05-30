@@ -27,5 +27,5 @@ int result = Remain(num1, num2);
 //     Console.WriteLine($" {num1} no multiple {num2}, Remainder {result}");
 // }
 
-string printline = result == 0? "multiple" : $"no multiple, remainder {result}";
+string printline = result == 0 ? "multiple" : $"no multiple, remainder {result}";
 Console.WriteLine(printline);
