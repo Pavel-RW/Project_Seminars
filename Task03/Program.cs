@@ -40,6 +40,7 @@ Console.WriteLine("Enter the day of the week");
 // {
 //     Console.WriteLine("Wrong day of the week!!!");
 // }
+
 string number = Console.ReadLine();
 if (number == "1")
 {

@@ -61,13 +61,13 @@
 
 int EnterCoord(string message)
 {
-System.Console.WriteLine(message);
-return Convert.ToInt32(Console.ReadLine());
+    System.Console.WriteLine(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
 
 double Dist(int x1, int y1, int x2, int y2)
 {
-return Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));
+    return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
 }
 
 int xOfA = EnterCoord("Enter x for A");
@@ -75,6 +75,6 @@ int yOfA = EnterCoord("Enter y for A");
 int xOfB = EnterCoord("Enter x for B");
 int yOfB = EnterCoord("Enter y for B");
 
-double result = Dist(xOfA, yOfA, xOfB, yOfB );
+double result = Dist(xOfA, yOfA, xOfB, yOfB);
 System.Console.WriteLine("Distance between dots: ");
 System.Console.WriteLine(Math.Round(result, 2, MidpointRounding.ToZero));
