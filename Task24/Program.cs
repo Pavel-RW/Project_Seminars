@@ -8,10 +8,10 @@
 Console.WriteLine("Enter positive integer: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if(number<=0)
+if (number <= 0)
 {
-Console.WriteLine("Wrong number entered");
-return;
+    Console.WriteLine("Wrong number entered");
+    return;
 }
 int sumNumbers = SumNumbers(number);
 Console.WriteLine($"Sum numbers from 1 to {number} = {sumNumbers}");
