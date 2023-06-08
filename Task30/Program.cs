@@ -6,9 +6,10 @@
 
 void FillArray(int[] array)
 {
+    Random rnd = new Random(); // var rnd = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(2);
+        array[i] = rnd.Next(2);
     }
 }
 
