@@ -38,5 +38,5 @@ int SumOddElements(int[] arr)
 
 int[] array = CreateArrayRndInt(5, -100, 100);
 PrintArray(array);
-int count = SumOddElements(array);
-Console.WriteLine($" -> {count}");
+int sum = SumOddElements(array);
+Console.WriteLine($" -> {sum}");
