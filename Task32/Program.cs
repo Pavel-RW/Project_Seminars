@@ -38,7 +38,6 @@ void ChangeSign(int[] arr)
     }
 }
 
-
 int[] array = CreateFillArray(10, -10, 10);
 PrintArray(array);
 ChangeSign(array);
