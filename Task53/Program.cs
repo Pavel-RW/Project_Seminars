@@ -27,27 +27,20 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void SwapRowsColumns(int[,] arr)
+void SwapFirstLastRow(int[,] arr)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
+    int lastRow = arr.GetLength(0) - 1;
+    for (int i = 0; i < arr.GetLength(1); i++)
     {
-        for (int j = i; j < arr.GetLength(1); j++)
-        {
-            int temp = arr[i, j];
-            arr[i, j] = arr[j, i];
-            arr[j, i] = temp;
-        }
+        int temp = arr[0, i];
+        arr[0, i] = arr[lastRow, i];
+        arr[lastRow, i] = temp;
     }
 }
 
-bool IsMatrixSquare(int[,] matrix)
-{
-    return matrix.GetLength(0) == matrix.GetLength(1);
-}
-
-int[,] matrix = CreateMatrixRndInt(4, 4, 0, 100);
+int[,] matrix = CreateMatrixRndInt(4, 4, 0, 30);
 PrintMatrix(matrix);
 Console.WriteLine();
-SwapRowsColumns(matrix);
+SwapFirstLastRow(matrix);
 PrintMatrix(matrix);
 Console.WriteLine();
