@@ -42,5 +42,5 @@ int[,] matrix = CreateMatrixRndInt(4, 4, 0, 30);
 PrintMatrix(matrix);
 Console.WriteLine();
 SwapFirstLastRow(matrix);
-PrintMatrix(matrix);
 Console.WriteLine();
+PrintMatrix(matrix);
