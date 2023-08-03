@@ -8,7 +8,7 @@
 // 34(1,0,0) 41(1,1,0) 26(1,0,1) 55(1,1,1)
 
 
-static int[,,] CreateUniqueRandom3DArray(int sizeX, int sizeY, int sizeZ, int minValue, int maxValue)
+static int[,,] Random3DArray(int sizeX, int sizeY, int sizeZ, int minValue, int maxValue)
 {
     int[,,] array = new int[sizeX, sizeY, sizeZ];
     HashSet<int> usedNumbers = new HashSet<int>();
@@ -36,7 +36,7 @@ static int[,,] CreateUniqueRandom3DArray(int sizeX, int sizeY, int sizeZ, int mi
     return array;
 }
 
-static void Print3DArrayWithIndices(int[,,] array)
+static void Print3DArrayIndices(int[,,] array)
 {
     int sizeX = array.GetLength(0);
     int sizeY = array.GetLength(1);
@@ -55,7 +55,7 @@ static void Print3DArrayWithIndices(int[,,] array)
     }
 }
 
-int[,,] array = CreateUniqueRandom3DArray(2, 2, 2, 10, 100);
-Print3DArrayWithIndices(array);
+int[,,] array = Random3DArray(2, 2, 2, 10, 100);
+Print3DArrayIndices(array);
 
 
