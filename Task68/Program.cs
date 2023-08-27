@@ -1,20 +1,20 @@
 ﻿// 68. Напишите программу вычисления функции Аккермана с помощью рекурсии.
 // Даны два неотрицательных числа m и n.
 
-Console.Write("Enter the first number: ");
+Console.Write("Enter number M: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Enter the second number: ");
+Console.Write("Enter number N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 if (NatNum(m) && NatNum(n))
 {
     int result = AckermannFunc(m, n);
-    Console.WriteLine($"Ackermann func  {m} and {n} = {result}");
+    Console.WriteLine($"Ackermann function M = {m}, N = {n} -> A({m},{n}) = {result}");
 }
 else
 {
-    Console.WriteLine($"Numbers must be non-negative. Entered: m = {m}, n = {n}");
+    Console.WriteLine($"Numbers must be not negative. Entered: M = {m}, N = {n}");
 }
 
 bool NatNum(int num) // Метод для проверки на натуральность
