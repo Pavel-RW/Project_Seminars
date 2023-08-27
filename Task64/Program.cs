@@ -12,5 +12,4 @@ void NaturalNumbers(int num) // 5
     if (num == 0) return;
     Console.Write($"{num} ");
     NaturalNumbers(num - 1);
-    
-}
+    }
