@@ -3,13 +3,25 @@
 // N = 5 -> "1, 2, 3, 4, 5"
 // N = 6 -> "1, 2, 3, 4, 5, 6"
 
-Console.Write("Enter natural number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-NaturalNumbers(number);
-
+bool IsNaturalNumber(int num)
+{
+    return num >= 1;
+}
 void NaturalNumbers(int num) // 5
 {
     if (num == 0) return;
     NaturalNumbers(num - 1);
     Console.Write($"{num} ");
+}
+
+Console.Write("Enter natural number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (IsNaturalNumber(number))
+{
+    NaturalNumbers(number);
+}
+else
+{
+    Console.WriteLine($"{number} not natural number.");
 }
